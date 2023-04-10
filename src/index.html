@@ -11,64 +11,109 @@
 <body>
     <div class="_container">
         <header class="header">
-            <h1 class="header__title">TutorUniClub</h1>
+            <h1 class="header__title title">TutorUniClub</h1>
             <nav class="header__nav">
-                <ul class="nav_menu">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="link">Предмет</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="link">Запись</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
         </header>
     </div>
 
 
-    <main>
-        <div class="_container">
-            <div class="subjects">
-                <h2 class="subjects__title">
-                    <ul class="subjects__list">
-                        <li></li>
-                    </ul>
-            </div>
-        </div>
-        <div class="_container">
-            <div class="cards">
-                <h2 class="cards__title">
 
+    <div class="_container">
+        <main class="index">
+            <div class="index-item subjects">
+                <h2 class="subjects__title title">
+                    Предметы
                 </h2>
-                <ul class="cards__list">
-                    <li>
-                        <span>БУБКА</span>
-                        <p></p>
-                        <a class="button">Записаться</a>
+                <ul class="subjects__list">
+                    <li class="subjects__item_major">
+                        <a class="subjects__link link">Математика</a>
                     </li>
-                    <li>
-                        <span>БУБКА</span>
-                        <p></p>
-                        <a class="button">Записаться</a>
+                    <li class="subjects__item_major">
+                        <a class="subjects__link link">Русский язык</a>
                     </li>
-                    <li>
-                        <span>БУБКА</span>
-                        <p></p>
-                        <a class="button">Записаться</a>
+                    <li class="subjects__item">
+                        <a class="subjects__link link">Английский язык</a>
+                    </li>
+                    <li class="subjects__item">
+                        <a class="subjects__link link">Физика</a>
+                    </li>
+                    <li class="subjects__item">
+                        <a class="subjects__link link">Информатика</a>
+                    </li>
+                    <li class="subjects__item">
+                        <a class="subjects__link link">Химия</a>
+                    </li>
+                    <li class="subjects__item">
+                        <a class="subjects__link link">Биология</a>
                     </li>
                 </ul>
             </div>
+            <div class="index-item cards">
+                <h2 class="cards__title title">
+                    Доска репетиторов
+                </h2>
+                <ul class="cards__list">
+                    <li class="cards__item person-card">
+                        <span class="person-card__name">Рината</span>
+                        <span class="person-card__surname">Биктимирова</span>
+                        <p class="person-card__description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a class="person-card__button button">Записаться</a>
+                    </li>
+                    <li class="cards__item person-card">
+                        <span class="person-card__name">Алексей</span>
+                        <span class="person-card__surname">Шулятьев</span>
+                        <p class="person-card__description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a class="person-card__button button">Записаться</a>
+                    </li>
+                    <li class="cards__item person-card">
+                        <span class="person-card__name">Михаил</span>
+                        <span class="person-card__surname">Марычев</span>
+                        <p class="person-card__description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a class="person-card__button button">Записаться</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
 
-        </div>>
-    </main>
     <div class="_container">
         <footer class="footer">
-            <img class="footer__logo">
             <a class=" footer__button button">Записаться</a>
             <div class="footer__info">
-                <span></span>
+                <span class="info-item__name">ИП Михайлова Ирина Андреевна</span>
+                <span class="info-item__adress">Коммунистическая, 32</span>
+                <span class="info-item__inn">026800002240</span>
+                <span class="info-item__bank-account">40802810800001337661 в банке АО "ТИНЬКОФФ БАНК"</span>
+                <span class="info-item__bank">К/с банка 30101810145250000974</span>
+                <span class="info-item__inn">044525974</span>
+                <span class="info-item__ogrn">319028000199201</span>
+            </div>
+            <div class="footer__contacts">
+                <span class="contacts__mail">info@tutoruniversity.ru</span>
+                <span class="contacts__tel">+7 (931) 105-48-72</span>
             </div>
             <div class="footer__social">
-                <a class="social__link" href="#" title="ВК" target="_blank"></a>
-                <a class="social__link" href="#" title="Instagram" target="_blank"></a>
-                <a class="social__link" href="#" title="Telegram" target="_blank"></a>
+                <a class="social__link link" href="#" title="VK" target="_blank"></a>
+                <a class="social__link link" href="#" title="Instagram" target="_blank"></a>
+                <a class="social__link link" href="#" title="Telegram" target="_blank"></a>
             </div>
         </footer>
     </div>

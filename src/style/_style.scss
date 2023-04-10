@@ -1,17 +1,74 @@
 body {
+    max-width: 1200px;
+
     background-color: $back;
 }
 
-header {
+
+.header {
+    height: 50px;
+
     display: flex;
-    flex-direction: row;
-}
+    justify-content: space-around;
+    align-items: center;
 
-nav {
-    background-color: azure;
-    margin-left: 50px;
-}
-
-h1 {
     font-family: 'Montserrat';
+
+    background-color: #fff;
+
+    &__title {
+        margin: auto 30px;
+    }
+
+    &__nav {
+        margin: auto 10px;
+    }
+
+    &__menu {
+        display: flex;
+
+        &-item {
+            margin: auto 20px;
+        }
+    }
+}
+
+.index {
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    font-family: 'Roboto';
+
+    background-color: cornflowerblue;
+
+    &-item {
+        margin: 0 10px;
+
+        &:nth-of-type(even) {
+            margin-left: 50px;
+        }
+    }
+}
+
+.subjects {
+    &__title {
+        margin: 10px auto;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    &:nth-child(n) {
+        margin: 0 10px;
+    }
+
+    &__button {
+        max-width: 150px;
+    }
 }
