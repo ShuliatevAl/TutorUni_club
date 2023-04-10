@@ -1,7 +1,17 @@
-h1 {
-    font-family: 'Montserrat';
+body {
+    background-color: $back;
 }
 
-.rep-list {
-    font-family: 'Roboto';
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: azure;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: 'Montserrat';
 }
