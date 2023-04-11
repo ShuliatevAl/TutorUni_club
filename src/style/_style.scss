@@ -32,11 +32,19 @@ body {
 }
 
 .index {
-    margin: 10px 0;
+    margin: auto;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    &__top {
+        height: 300px;
+
+        background-color: bisque;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
 
     font-family: 'Roboto';
 
@@ -82,6 +90,10 @@ body {
         vertical-align: center;
 
         background-color: lightcoral;
+
+        &_major {
+            background-color: orangered;
+        }
     }
 
     &__button {
@@ -165,6 +177,18 @@ body {
                 background-size: contain;
             }
         }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__button {
+        width: inherit;
+
+        margin: 5px 10px;
     }
 }
 
