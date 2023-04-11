@@ -64,7 +64,7 @@ const config = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: path.resolve(__dirname, 'src', 'index.html'),
-            filename: '[name].[contenthash].html',
+            //filename: '[name].[contenthash].html',
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',

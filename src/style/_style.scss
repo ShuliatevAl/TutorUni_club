@@ -1,6 +1,4 @@
 body {
-    max-width: 1200px;
-
     background-color: $back;
 }
 
@@ -34,7 +32,7 @@ body {
 }
 
 .index {
-    margin: 20px 0;
+    margin: 10px 0;
 
     display: flex;
     justify-content: space-around;
@@ -45,17 +43,128 @@ body {
     background-color: cornflowerblue;
 
     &-item {
-        margin: 0 10px;
+        margin: 10px 10px;
 
         &:nth-of-type(even) {
-            margin-left: 50px;
+            margin-left: 30px;
         }
     }
 }
 
 .subjects {
+    display: flex;
+    flex-direction: column;
+
+    background-color: gray;
+
     &__title {
         margin: 10px auto;
+    }
+
+    &__list {
+        margin: 0 50px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        height: 30px;
+
+        margin: 10px 5px;
+        padding: 0 10px;
+
+        border: solid black;
+        border-radius: 5px;
+
+        font-weight: bold;
+        text-align: center;
+        vertical-align: center;
+
+        background-color: lightcoral;
+    }
+
+    &__button {
+        margin-top: 50px;
+    }
+}
+
+.cards {
+    background-color: sandybrown;
+
+    &__title {
+        margin: 10px 10px;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__item {
+        background-color: lightgreen;
+        margin: 10px;
+    }
+}
+
+.person-card {
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+
+        margin: 5px;
+    }
+
+    &__photo {
+        width: 150px;
+        height: 150px;
+
+        background-color: #fff;
+
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+    }
+
+    &__name,
+    &__surname {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__bottom {
+        margin: 5px;
+    }
+
+    &__links {
+        position: relative;
+
+        &:nth-of-type(n) {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 10px;
+                left: -30px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
     }
 }
 
