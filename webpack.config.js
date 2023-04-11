@@ -24,10 +24,8 @@ const config = {
                 use: [
                     // Creates `style` nodes from JS strings
                     MiniCssExtractPlugin.loader,
-
                     // Translates CSS into CommonJS
                     "css-loader",
-
                     // Compiles Sass to CSS
                     "sass-loader",
                 ],
@@ -65,7 +63,8 @@ const config = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: path.resolve(__dirname, 'src', 'index.html')
+            template: path.resolve(__dirname, 'src', 'index.html'),
+            filename: '[name].[contenthash].html',
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
