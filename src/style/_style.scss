@@ -54,8 +54,25 @@
     }
 
     &__add-text {
+        position: relative;
+
         font-size: 16px;
         font-style: italic;
+        text-transform: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: -2px;
+            left: -30px;
+
+            background-image: url('/src/img/icons/pen.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
     }
 
     &__top-right {
@@ -81,7 +98,6 @@
     &__bottom {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
 
         background-color: bisque;
     }
@@ -90,6 +106,123 @@
 
     &-item {
         margin: 10px 10px;
+    }
+}
+
+.choose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 80px;
+
+    &__bar,
+    &__view {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        margin-top: 15px;
+    }
+
+    &__view {
+        border: 1px solid black;
+        border-radius: 11px;
+    }
+
+    &__view-text {
+        margin: 4px 10px;
+
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    &__button {
+        width: 40px;
+        position: relative;
+        border: none;
+
+        &:nth-of-type(n) {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 2px;
+                left: 8px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+
+        &_first {
+            &::before {
+                background-image: url('/src/img/icons/list.svg');
+            }
+
+            margin: 0 5px;
+        }
+
+        &_last {
+            &::before {
+                background-image: url('/src/img/icons/card.svg');
+            }
+
+            margin-left: 5px;
+            background-color: inherit;
+        }
+    }
+
+    &__bar {
+        position: relative;
+    }
+
+    &__label {
+        display: block;
+
+        padding-top: 3px;
+        padding-left: 25px;
+
+        position: absolute;
+
+        &:nth-of-type(1) {
+            min-width: 100px;
+            top: 1px;
+            left: 1px;
+
+            background-color: $select;
+        }
+
+        &:nth-of-type(2) {
+            min-width: 75px;
+            margin: 0 20px;
+        }
+
+        &:nth-of-type(3) {
+            min-width: 75px;
+        }
+    }
+}
+
+
+.select-list {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: $select;
+
+    &:nth-of-type(1) {
+        width: 125px;
+    }
+
+    &:nth-of-type(2) {
+        width: 75px;
+        margin: 0 20px;
+    }
+
+    &:nth-of-type(3) {
+        width: 75px;
     }
 }
 
@@ -262,43 +395,3 @@
         }
     }
 }
-
-
-
-
-/* .subjects {
-    display: flex;
-    flex-direction: column;
-
-    &__title {
-        margin: 10px auto;
-    }
-
-    &__list {
-        margin: 0 50px;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__item {
-        height: 30px;
-
-        margin: 10px 5px;
-        padding: 0 10px;
-
-        border: solid black;
-        border-radius: 10px;
-
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-        vertical-align: center;
-
-        background-color: whitesmoke;
-
-        &_major {
-            background-color: lightcoral;
-        }
-    }
-} */

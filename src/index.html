@@ -34,7 +34,7 @@
                 <div class="index__top-left">
                     <h1 class="index__title title">Доска<br>участников</h1>
                     <div class="index__add">
-                        <p class="index__add-text">Добавить свою анкету</p>
+                        <p class="index__add-text link">Добавить свою анкету</p>
                     </div>
                 </div>
                 <div class="index__top-right">
@@ -44,42 +44,15 @@
                 </div>
             </div>
             <div class="index__bottom">
-                <!-- 
-                <div class="index-item subjects">
-                    <h2 class="subjects__title title">
-                        Предметы
-                    </h2>
-                    <ul class="subjects__list">
-                        <li class="subjects__item subjects__item_major">
-                            <a class="subjects__link link">Математика</a>
-                        </li>
-                        <li class="subjects__item subjects__item_major">
-                            <a class="subjects__link link">Русский</a>
-                        </li>
-                        <li class="subjects__item">
-                            <a class="subjects__link link">Английский</a>
-                        </li>
-                        <li class="subjects__item">
-                            <a class="subjects__link link">Физика</a>
-                        </li>
-                        <li class="subjects__item">
-                            <a class="subjects__link link">Информатика</a>
-                        </li>
-                        <li class="subjects__item">
-                            <a class="subjects__link link">Химия</a>
-                        </li>
-                        <li class="subjects__item">
-                            <a class="subjects__link link">Биология</a>
-                        </li>
-                    </ul>
-                </div> -->
                 <div class="index-item choose">
                     <div class="choose__view">
-                        <button class="button"></button>
+                        <span class="choose__view-text">Вид доски</span>
+                        <button class="choose__button choose__button_first button"></button>
+                        <button class="choose__button choose__button_last button"></button>
                     </div>
                     <div class="choose__bar">
-                        <label for="subject-filter"></label>
-                        <select class="choose__subject" name="subject-filter">
+                        <label class="choose__label" for="subject-filter">Предмет</label>
+                        <select class="choose__subject select-list" name="subject-filter">
                             <option value="math">Математика</option>
                             <option value="russian">Русский</option>
                             <option value="english">Английский</option>
@@ -88,33 +61,32 @@
                             <option value="chemistry">Химия</option>
                             <option value="biology">Биология</option>
                         </select>
-                        <label for="experience-filter"></label>
-                        <select class="choose__experience" name="experience-filter">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                        <label class="choose__label" for="experience-filter">Опыт</label>
+                        <select class="choose__experience select-list" name="experience-filter">
+                            <option value="1">1 год</option>
+                            <option value="2">2 года</option>
+                            <option value="3">3 года</option>
+                            <option value="4">4 года</option>
+                            <option value="5">5 лет</option>
                         </select>
-                        <label for="price-filter"></label>
-                        <select class="choose__price" name="price-filter">
+                        <label class="choose__label" for="price-filter">Цена</label>
+                        <select class="choose__price select-list" name="price-filter">
                             <option value="1500">1500</option>
                             <option value="2000">2000</option>
                             <option value="2500">2500</option>
                             <option value="3000">3000</option>
                         </select>
                     </div>
-
                 </div>
                 <div class="index-item cards">
                     <h2 class="cards__title title">
-                        Наши наставники
+                        Наши репетиторы
                     </h2>
                     <ul class="cards__list">
                         <li class="cards__item person-card">
                             <div class="person-card__top">
                                 <div class="person-card__foto foto">
-                                    <img class="foto foto_1" src="/src/img/card/Rinata1.webp">
+                                    <img class="foto foto_1" src="/src/img/card/Rinata1.webp" alt="Фото репетитора">
                                 </div>
                                 <div class="person-card__info">
                                     <h3 class="person-card__name title">Рината</h3>
@@ -151,7 +123,7 @@
                         <li class="cards__item person-card">
                             <div class="person-card__top">
                                 <div class="person-card__foto foto">
-                                    <img class="foto foto_2" src="/src/img/card/Rinata2.webp">
+                                    <img class="foto foto_2" src="/src/img/card/Rinata2.webp" alt="Фото репетитора">
                                 </div>
                                 <div class="person-card__info">
                                     <h3 class="person-card__name title">Рината</h3>
@@ -188,7 +160,7 @@
                         <li class="cards__item person-card">
                             <div class="person-card__top">
                                 <div class="person-card__foto">
-                                    <img class="foto foto_3" src="/src/img/card/Rinata3.webp">
+                                    <img class="foto foto_3" src="/src/img/card/Rinata3.webp" alt="Фото репетитора">
                                 </div>
                                 <div class="person-card__info">
                                     <h3 class="person-card__name title">Рината</h3>
