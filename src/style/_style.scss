@@ -35,14 +35,58 @@ body {
     margin: auto;
 
     &__top {
-        height: 300px;
+        min-height: 250px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
         background-color: bisque;
     }
 
+    &__top-left {
+        margin-left: 80px;
+    }
+
+    &__title {
+        margin-top: 80px;
+
+        font-size: 48px;
+        line-height: 90%;
+    }
+
+    &__add {
+        margin-left: 40px;
+        margin-top: 25px;
+    }
+
+    &__add-text {
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    &__top-right {
+        margin-left: 40px;
+        margin-top: 80px;
+        margin-right: 80px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    &__text_major {
+        font-weight: bold;
+    }
+
+    &__text_minor {
+        margin-top: 13px;
+    }
+
     &__bottom {
         display: flex;
-        justify-content: space-around;
         align-items: flex-start;
     }
 
@@ -52,10 +96,6 @@ body {
 
     &-item {
         margin: 10px 10px;
-
-        &:nth-of-type(even) {
-            margin-left: 30px;
-        }
     }
 }
 
@@ -102,16 +142,19 @@ body {
 }
 
 .cards {
+    min-width: 250px;
+
     background-color: sandybrown;
 
     &__title {
         margin: 10px 10px;
     }
 
-    &_list {
+    &__list {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -122,6 +165,7 @@ body {
 
 .person-card {
     max-width: 300px;
+    min-width: 250px;
 
     display: flex;
     flex-direction: column;
@@ -134,13 +178,15 @@ body {
     }
 
     &__photo {
-        width: 150px;
-        height: 150px;
+        width: 90px;
+        height: 90px;
+
+        margin-left: 20px;
 
         background-color: #fff;
 
         border: 1px solid black;
-        border-radius: 50%;
+        border-radius: 25%;
     }
 
     &__info {
