@@ -1,18 +1,9 @@
-body {
-    background-color: $back;
-}
-
-
 .header {
     height: 50px;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    font-family: 'Montserrat';
-
-    background-color: #fff;
 
     &__title {
         margin: auto 30px;
@@ -27,6 +18,8 @@ body {
 
         &-item {
             margin: auto 20px;
+
+            font-family: 'Montserrat';
         }
     }
 }
@@ -87,67 +80,27 @@ body {
 
     &__bottom {
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
+
+        background-color: bisque;
     }
 
     font-family: 'Roboto';
-
-    background-color: cornflowerblue;
 
     &-item {
         margin: 10px 10px;
     }
 }
 
-.subjects {
-    display: flex;
-    flex-direction: column;
+.cards {
+    width: 100%;
 
-    background-color: gray;
+    margin: 10px auto;
 
     &__title {
         margin: 10px auto;
-    }
-
-    &__list {
-        margin: 0 50px;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__item {
-        height: 30px;
-
-        margin: 10px 5px;
-        padding: 0 10px;
-
-        border: solid black;
-        border-radius: 5px;
-
-        font-weight: bold;
         text-align: center;
-        vertical-align: center;
-
-        background-color: lightcoral;
-
-        &_major {
-            background-color: orangered;
-        }
-    }
-
-    &__button {
-        margin-top: 50px;
-    }
-}
-
-.cards {
-    min-width: 250px;
-
-    background-color: sandybrown;
-
-    &__title {
-        margin: 10px 10px;
     }
 
     &__list {
@@ -158,7 +111,7 @@ body {
     }
 
     &__item {
-        background-color: lightgreen;
+        background-color: lightgrey;
         margin: 10px;
     }
 }
@@ -170,23 +123,29 @@ body {
     display: flex;
     flex-direction: column;
 
+    border-radius: 10px;
+
     &__top {
         display: flex;
         flex-direction: row;
 
-        margin: 5px;
+        margin: 10px 5px;
     }
 
-    &__photo {
+    &__foto {
         width: 90px;
         height: 90px;
 
         margin-left: 20px;
 
-        background-color: #fff;
-
-        border: 1px solid black;
+        border: 2px solid black;
         border-radius: 25%;
+
+        overflow: hidden;
+
+        &:nth-child(n) {
+            filter: none;
+        }
     }
 
     &__info {
@@ -199,11 +158,41 @@ body {
     &__name,
     &__surname {
         font-weight: bold;
+        font-size: 16px;
         text-transform: uppercase;
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        &:nth-child(n) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__middle-left {
+        margin-left: 40px;
+    }
+
+    &__middle-right {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto 35px;
     }
 
     &__bottom {
         margin: 5px;
+    }
+
+    &__description {
+        margin: 0 20px;
+
+        text-align: justify;
+        line-height: 18px;
     }
 
     &__links {
@@ -240,14 +229,76 @@ body {
 
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
 
-    &:nth-child(n) {
-        margin: 0 10px;
+    &__top,
+    &__bottom {
+        display: flex;
+        flex-direction: row;
     }
 
-    &__button {
-        max-width: 150px;
+    &__top {
+        justify-content: space-around;
+
+        margin-top: 10px;
+    }
+
+    &__bottom {
+        justify-content: space-between;
+
+        margin: auto 25px;
+    }
+
+    &__info,
+    &__contacts,
+    &__files {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+            font-weight: bold;
+        }
     }
 }
+
+
+
+
+/* .subjects {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: 10px auto;
+    }
+
+    &__list {
+        margin: 0 50px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        height: 30px;
+
+        margin: 10px 5px;
+        padding: 0 10px;
+
+        border: solid black;
+        border-radius: 10px;
+
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        vertical-align: center;
+
+        background-color: whitesmoke;
+
+        &_major {
+            background-color: lightcoral;
+        }
+    }
+} */

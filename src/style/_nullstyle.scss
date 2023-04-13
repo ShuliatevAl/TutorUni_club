@@ -69,10 +69,10 @@ select {
     font: inherit;
 }
 
-// Blur images when they have no alt attribute
+/* Blur images when they have no alt attribute
 img:not([alt]) {
     filter: blur(10px);
-}
+} */
 
 // Remove all animations and transitions for people that prefer not to see them
 @media (prefers-reduced-motion: reduce) {

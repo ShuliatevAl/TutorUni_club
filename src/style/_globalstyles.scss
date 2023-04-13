@@ -4,6 +4,8 @@
 
     margin: auto;
     padding: 0 20px;
+
+    background-color: $back;
 }
 
 .visually-hidden {
@@ -64,7 +66,8 @@ a {
     padding-top: 2px;
 
     border: 2px solid black;
-    background-color: orangered;
+    border-radius: 10px;
+    background-color: peru;
 
     font-family: 'Montserrat';
     font-weight: bold;
@@ -84,25 +87,27 @@ a {
 
     margin: 10px 5px;
 
+    border: 2px solid black;
     border-radius: 20%;
-    background-color: blue;
+
+    background-color: lightblue;
     background-position: center;
     background-repeat: no-repeat;
 
     &:nth-of-type(1) {
-        background-image: url(/src/img/card/facebook_icon.svg);
+        background-image: url(/src/img/social/twitter_icon.svg);
     }
 
     &:nth-of-type(2) {
-        background-image: url(/src/img/card/instagram_icon.svg);
+        background-image: url(/src/img/social/instagram_icon.svg);
     }
 
     &:nth-of-type(3) {
-        background-image: url(/src/img/card/twitter_icon.svg);
+        background-image: url(/src/img/social/twitter_icon.svg);
     }
 
     &:nth-of-type(4) {
-        background-image: url(/src/img/card/twitter_icon.svg);
+        background-image: url(/src/img/social/facebook_icon.svg);
     }
 
     &:hover,

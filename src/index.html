@@ -44,6 +44,7 @@
                 </div>
             </div>
             <div class="index__bottom">
+                <!-- 
                 <div class="index-item subjects">
                     <h2 class="subjects__title title">
                         Предметы
@@ -71,7 +72,39 @@
                             <a class="subjects__link link">Биология</a>
                         </li>
                     </ul>
-                    <a class="subjects__button button">Записаться</a>
+                </div> -->
+                <div class="index-item choose">
+                    <div class="choose__view">
+                        <button class="button"></button>
+                    </div>
+                    <div class="choose__bar">
+                        <label for="subject-filter"></label>
+                        <select class="choose__subject" name="subject-filter">
+                            <option value="math">Математика</option>
+                            <option value="russian">Русский</option>
+                            <option value="english">Английский</option>
+                            <option value="informatics">Информатика</option>
+                            <option value="physics">Физика</option>
+                            <option value="chemistry">Химия</option>
+                            <option value="biology">Биология</option>
+                        </select>
+                        <label for="experience-filter"></label>
+                        <select class="choose__experience" name="experience-filter">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label for="price-filter"></label>
+                        <select class="choose__price" name="price-filter">
+                            <option value="1500">1500</option>
+                            <option value="2000">2000</option>
+                            <option value="2500">2500</option>
+                            <option value="3000">3000</option>
+                        </select>
+                    </div>
+
                 </div>
                 <div class="index-item cards">
                     <h2 class="cards__title title">
@@ -80,19 +113,26 @@
                     <ul class="cards__list">
                         <li class="cards__item person-card">
                             <div class="person-card__top">
-                                <div class="person-card__photo">
-                                    <img>
+                                <div class="person-card__foto foto">
+                                    <img class="foto foto_1" src="/src/img/card/Rinata1.webp">
                                 </div>
                                 <div class="person-card__info">
-                                    <span class="person-card__name">Рината</span>
-                                    <span class="person-card__surname">Биктимирова</span>
+                                    <h3 class="person-card__name title">Рината</h3>
+                                    <h3 class="person-card__surname title">Биктимирова</span>
 
                                 </div>
                             </div>
                             <div class="person-card__middle">
-                                <span class="person-card__nikname">Буня</span>
-                                <span class="person-card__subject">Химия</span>
-                                <span class="person-card__experience">5 лет</span>
+                                <div class="person-card__middle-left">
+                                    <h4 class="person-card__experience title">Опыт:</h4>
+                                    <h4 class="person-card__experience title">Места:</h4>
+                                    <h4 class="person-card__experience title">Ставка:</h4>
+                                </div>
+                                <div class="person-card__middle-right">
+                                    <span class="person-card__experience">5 лет</span>
+                                    <span class="person-card__free-places">2 шт.</span>
+                                    <span class="person-card__money">2500 руб. в час</span>
+                                </div>
                             </div>
                             <div class="person-card__bottom">
                                 <p class="person-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -110,19 +150,63 @@
                         </li>
                         <li class="cards__item person-card">
                             <div class="person-card__top">
-                                <div class="person-card__photo">
-                                    <img>
+                                <div class="person-card__foto foto">
+                                    <img class="foto foto_2" src="/src/img/card/Rinata2.webp">
                                 </div>
                                 <div class="person-card__info">
-                                    <span class="person-card__name">Рината</span>
-                                    <span class="person-card__surname">Биктимирова</span>
+                                    <h3 class="person-card__name title">Рината</h3>
+                                    <h3 class="person-card__surname title">Биктимирова</span>
 
                                 </div>
                             </div>
                             <div class="person-card__middle">
-                                <span class="person-card__nikname">Буня</span>
-                                <span class="person-card__subject">Химия</span>
-                                <span class="person-card__experience">5 лет</span>
+                                <div class="person-card__middle-left">
+                                    <h4 class="person-card__experience title">Опыт:</h4>
+                                    <h4 class="person-card__experience title">Места:</h4>
+                                    <h4 class="person-card__experience title">Ставка:</h4>
+                                </div>
+                                <div class="person-card__middle-right">
+                                    <span class="person-card__experience">5 лет</span>
+                                    <span class="person-card__free-places">2 шт.</span>
+                                    <span class="person-card__money">2500 руб. в час</span>
+                                </div>
+                            </div>
+                            <div class="person-card__bottom">
+                                <p class="person-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="person-card__links">
+                                    <div class="person-card__social">
+                                        <a class="social__link link" href="#" title="VK" target="_blank"></a>
+                                        <a class="social__link link" href="#" title="Instagram" target="_blank"></a>
+                                        <a class="social__link link" href="#" title="Telegram" target="_blank"></a>
+                                        <a class="social__link link" href="#" title="Twitter" target="_blank"></a>
+                                    </div>
+                                    <a class="person-card__button button">Записаться</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards__item person-card">
+                            <div class="person-card__top">
+                                <div class="person-card__foto">
+                                    <img class="foto foto_3" src="/src/img/card/Rinata3.webp">
+                                </div>
+                                <div class="person-card__info">
+                                    <h3 class="person-card__name title">Рината</h3>
+                                    <h3 class="person-card__surname title">Биктимирова</span>
+
+                                </div>
+                            </div>
+                            <div class="person-card__middle">
+                                <div class="person-card__middle-left">
+                                    <h4 class="person-card__experience title">Опыт:</h4>
+                                    <h4 class="person-card__experience title">Места:</h4>
+                                    <h4 class="person-card__experience title">Ставка:</h4>
+                                </div>
+                                <div class="person-card__middle-right">
+                                    <span class="person-card__experience">5 лет</span>
+                                    <span class="person-card__free-places">2 шт.</span>
+                                    <span class="person-card__money">2500 руб. в час</span>
+                                </div>
                             </div>
                             <div class="person-card__bottom">
                                 <p class="person-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -146,25 +230,35 @@
 
     <div class="_container">
         <footer class="footer">
-            <a class=" footer__button button">Записаться</a>
-            <div class="footer__info">
-                <span class="info-item__name">ИП Михайлова Ирина Андреевна</span>
-                <span class="info-item__adress">Коммунистическая, 32</span>
-                <span class="info-item__inn">026800002240</span>
-                <span class="info-item__bank-account">40802810800001337661 в банке АО "ТИНЬКОФФ БАНК"</span>
-                <span class="info-item__bank">К/с банка 30101810145250000974</span>
-                <span class="info-item__inn">044525974</span>
-                <span class="info-item__ogrn">319028000199201</span>
+            <div class="footer__top">
+                <div class="footer__info info">
+                    <p class="info__item info__item_name"><span>ИП Михайлова Ирина Андреевна</span></p>
+                    <p class="info__item info__item_adress">Коммунистическая, 32</p>
+                    <p class="info__item info__item_inn"><span>ИНН: </span>026800002240</p>
+                    <p class="info__item info__item_bank-account"><span>Р/с </span>40802810800001337661 в банке АО
+                        "ТИНЬКОФФ БАНК"</p>
+                    <p class="info__item info__item_bank"><span>К/с </span> банка 30101810145250000974</p>
+                    <p class="info__item info__item_BIK"><span>БИК: </span>044525974</p>
+                    <p class="info__item info__item_OGRN"><span>ОГРН: </span>319028000199201</p>
+                </div>
+                <div class="footer__contacts">
+                    <p class="contacts__text"><span>Для обратной связи</span></p>
+                    <p class="contacts__mail"><span>e-mail: </span>info@tutoruniversity.ru</p>
+                    <p class="contacts__tel"><span>тел.: </span>+7 (931) 105-48-72</p>
+                </div>
             </div>
-            <div class="footer__contacts">
-                <span class="contacts__mail">info@tutoruniversity.ru</span>
-                <span class="contacts__tel">+7 (931) 105-48-72</span>
-            </div>
-            <div class="footer__social">
-                <a class="social__link link" href="#" title="VK" target="_blank"></a>
-                <a class="social__link link" href="#" title="Instagram" target="_blank"></a>
-                <a class="social__link link" href="#" title="Telegram" target="_blank"></a>
-                <a class="social__link link" href="#" title="Twitter" target="_blank"></a>
+            <div class="footer__bottom">
+                <div class="footer__files files">
+                    <a class="files__contract"><span>Договор оферты</span></a>
+                    <a class="files__personification"><span>Политика обработки персональных данных</span></a>
+                    <a class="files__agreement"><span>Согласие на обработку персональных данных</span></a>
+                </div>
+                <div class="footer__social">
+                    <a class="social__link link" href="#" title="VK" target="_blank"></a>
+                    <a class="social__link link" href="#" title="Instagram" target="_blank"></a>
+                    <a class="social__link link" href="#" title="Telegram" target="_blank"></a>
+                    <a class="social__link link" href="#" title="Twitter" target="_blank"></a>
+                </div>
             </div>
         </footer>
     </div>
