@@ -25,6 +25,7 @@
                     </li>
                 </ul>
             </nav>
+            <div class="header__burger"></div>
         </header>
     </div>
 
@@ -51,30 +52,30 @@
                         <button class="choose__button choose__button_last button"></button>
                     </div>
                     <div class="choose__bar">
-                        <label class="choose__label" for="subject-filter">Предмет</label>
+                        <label class="choose__label subject-label" for="subject-filter">Предмет</label>
                         <select class="choose__subject select-list" name="subject-filter">
-                            <option value="math">Математика</option>
-                            <option value="russian">Русский</option>
-                            <option value="english">Английский</option>
-                            <option value="informatics">Информатика</option>
-                            <option value="physics">Физика</option>
-                            <option value="chemistry">Химия</option>
-                            <option value="biology">Биология</option>
+                            <option class="select-list__option" value="math">Математика</option>
+                            <option class="select-list__option" value="russian">Русский</option>
+                            <option class="select-list__option" value="english">Английский</option>
+                            <option class="select-list__option" value="informatics">Информатика</option>
+                            <option class="select-list__option" value="physics">Физика</option>
+                            <option class="select-list__option" value="chemistry">Химия</option>
+                            <option class="select-list__option" value="biology">Биология</option>
                         </select>
-                        <label class="choose__label" for="experience-filter">Опыт</label>
+                        <label class="choose__label experience-label" for="experience-filter">Опыт</label>
                         <select class="choose__experience select-list" name="experience-filter">
-                            <option value="1">1 год</option>
-                            <option value="2">2 года</option>
-                            <option value="3">3 года</option>
-                            <option value="4">4 года</option>
-                            <option value="5">5 лет</option>
+                            <option class="select-list__option" value="1">1 год</option>
+                            <option class="select-list__option" value="2">2 года</option>
+                            <option class="select-list__option" value="3">3 года</option>
+                            <option class="select-list__option" value="4">4 года</option>
+                            <option class="select-list__option" value="5">5 лет</option>
                         </select>
-                        <label class="choose__label" for="price-filter">Цена</label>
+                        <label class="choose__label price-label" for="price-filter">Цена</label>
                         <select class="choose__price select-list" name="price-filter">
-                            <option value="1500">1500</option>
-                            <option value="2000">2000</option>
-                            <option value="2500">2500</option>
-                            <option value="3000">3000</option>
+                            <option class="select-list__option" value="1500">1500</option>
+                            <option class="select-list__option" value="2000">2000</option>
+                            <option class="select-list__option" value="2500">2500</option>
+                            <option class="select-list__option" value="3000">3000</option>
                         </select>
                     </div>
                 </div>
@@ -203,7 +204,7 @@
     <div class="_container">
         <footer class="footer">
             <div class="footer__top">
-                <div class="footer__info info">
+                <div class="footer__info info visually-hidden">
                     <p class="info__item info__item_name"><span>ИП Михайлова Ирина Андреевна</span></p>
                     <p class="info__item info__item_adress">Коммунистическая, 32</p>
                     <p class="info__item info__item_inn"><span>ИНН: </span>026800002240</p>
@@ -213,11 +214,6 @@
                     <p class="info__item info__item_BIK"><span>БИК: </span>044525974</p>
                     <p class="info__item info__item_OGRN"><span>ОГРН: </span>319028000199201</p>
                 </div>
-                <div class="footer__contacts">
-                    <p class="contacts__text"><span>Для обратной связи</span></p>
-                    <p class="contacts__mail"><span>e-mail: </span>info@tutoruniversity.ru</p>
-                    <p class="contacts__tel"><span>тел.: </span>+7 (931) 105-48-72</p>
-                </div>
             </div>
             <div class="footer__bottom">
                 <div class="footer__files files">
@@ -225,7 +221,12 @@
                     <a class="files__personification"><span>Политика обработки персональных данных</span></a>
                     <a class="files__agreement"><span>Согласие на обработку персональных данных</span></a>
                 </div>
-                <div class="footer__social">
+                <div class="footer__contacts">
+                    <p class="contacts__text"><span>Для обратной связи</span></p>
+                    <p class="contacts__mail"><span>e-mail: </span>info@tutoruniversity.ru</p>
+                    <p class="contacts__tel"><span>тел.: </span>+7 (931) 105-48-72</p>
+                </div>
+                <div class="footer__social social">
                     <a class="social__link link" href="#" title="VK" target="_blank"></a>
                     <a class="social__link link" href="#" title="Instagram" target="_blank"></a>
                     <a class="social__link link" href="#" title="Telegram" target="_blank"></a>
