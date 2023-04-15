@@ -6,4 +6,6 @@ SCSS / SASS,
 Native JS,
 
 BEM,
-Webpack
+Webpack,
+Git,
+Linux
