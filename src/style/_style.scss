@@ -455,7 +455,14 @@
 
     .footer__bottom {
         flex-direction: column;
+        align-items: center;
         margin: auto;
+
+        .footer__files {
+            order: 3;
+            font-size: 14px;
+            text-align: center;
+        }
 
         .footer__contacts {
             margin-top: 10px;
@@ -468,6 +475,13 @@
     .header {
         justify-content: space-between;
 
+        &__title {
+            order: 0;
+            flex: 1 0 75%;
+
+            margin: auto 10px;
+        }
+
         &__nav {
             position: relative;
         }
@@ -475,9 +489,9 @@
         &__menu {
             width: 100%;
 
-            flex-direction: column;
             position: absolute;
-
+            top: 40px;
+            left: -60px;
             background-color: #FF0000;
 
             pointer-events: none;
@@ -497,8 +511,32 @@
 
         &__burger {
             display: block;
+
+            order: 1;
+            flex: 1 0 15%;
+
             margin: 15px 10px;
+            margin-right: 10px;
+
+            // break-after: always; ?
         }
+    }
+
+    .index {
+
+        &__top-left,
+        &__top-right {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        &__title {
+            margin-top: 40px;
+        }
+    }
+
+    .choose {
+        margin: 0 40px;
     }
 }
 
@@ -523,11 +561,49 @@
             order: 1;
             margin-left: 0;
             margin-right: 0;
+
+            display: none;
         }
 
         &:nth-of-type(3) {
             order: 1;
+
+            display: none;
         }
     }
 
+    .choose__label {
+
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $md7) {
+    .header {
+        &__title {
+            flex: 1 0 70%;
+        }
+    }
+
+    .index {
+        &__top {
+            min-height: 120px;
+        }
+
+        &__top-left {
+            margin-left: 30px;
+        }
+
+        &__top-right {
+            display: none;
+        }
+
+        &__title {
+            margin-top: 20px;
+            font-size: 32px;
+        }
+    }
 }
