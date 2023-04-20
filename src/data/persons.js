@@ -53,7 +53,7 @@ let Rinata = new Person(
     this.subject = chemistry,
     this.experience = 5,
     this.price = 3000,
-    this.places = 2,
+    this.places = true,
 
     this.telegram_link = empty,
     this.instagram_link = empty,
