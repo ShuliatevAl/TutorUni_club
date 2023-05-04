@@ -1,20 +1,16 @@
 class Person {
 
-    constructor(name, surname, sex, age) {
+    constructor(PersonInitObject) {
         this.name = name;
         this.surname = surname;
         this.sex = sex;
         this.age = age;
-    }
 
-    constructor(subject, experience, price, places) {
         this.subject = subject;
         this.experience = experience;
         this.price = price;
         this.places = places;
-    }
 
-    constructor(telegram_link, instagram_link, vk_link, twitter_link) {
         this.telegram_link = telegram_link;
         this.instagram_link = instagram_link;
         this.vk_link = vk_link;
